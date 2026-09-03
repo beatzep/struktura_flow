@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terminplanassistent · Struktura Digital</title>
+<meta name="description" content="Onlinebuchung, automatische Zuordnung und Statusverwaltung an einem Ort. Ihre Mitglieder buchen selbst, Ihr Team behält die Kontrolle.">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-512.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="navbar scrolled" id="navbar">
+  <div class="navbar-inner">
+    <a class="brand" href="index.html">
+      <img class="brand-mark" src="assets/struktura-mark.png" alt="" width="20" height="26">
+      <span class="brand-name">Struktura</span>
+    </a>
+    <nav class="nav-links" aria-label="Hauptnavigation">
+      <a href="index.html#herausforderungen">Herausforderungen</a>
+      <a href="index.html#leistungen">Leistungen</a>
+      <a href="#sicherheit">Sicherheit</a>
+      <a href="index.html#vertrauen">Über uns</a>
+      <a href="index.html#kontakt">Kontakt</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn btn-ghost" href="https://portal.struktura-digital.de/login">Anmelden</a>
+      <a class="btn btn-dark" href="index.html#kontakt">Demo anfragen</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="mod-hero">
+    <a class="mod-back" href="index.html#leistungen"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M14 8H3M7 3.5 2.5 8 7 12.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Alle Leistungen</a>
+    <p class="overline">Leistung</p>
+    <h1>Terminplanassistent</h1>
+    <p class="sect-lead">Onlinebuchung, automatische Zuordnung und Statusverwaltung an einem Ort. Ihre Mitglieder buchen selbst, Ihr Team behält die Kontrolle.</p>
+    <div class="mod-tags"><span>Öffentliche Buchung</span><span>Slotverwaltung</span><span>Bearbeiterzuweisung</span></div>
+  </div>
+
+  <section class="sect">
+    <div class="sect-inner">
+      <div class="sect-head">
+        <p class="overline">Wofür</p>
+        <h2 class="sect-h2">Was dieses Modul löst.</h2>
+      </div>
+      <div class="card-grid card-grid-3">
+        <article class="feat-card">
+          <span class="feat-ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+          </span>
+          <h3>Mitglieder buchen selbst</h3>
+          <p>Über eine eigene Buchungsseite wählen Mitglieder einen freien Termin, ohne Anmeldung und ohne Rückfrage per Telefon.</p>
+        </article>
+        <article class="feat-card">
+          <span class="feat-ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 20v-2a4 4 0 0 0-3-3.9"/></svg>
+          </span>
+          <h3>Zuweisung ohne Abstimmung</h3>
+          <p>Termine werden Bearbeitern zugeordnet, der Status ist für alle sichtbar. Absagen geben den Zeitraum sofort wieder frei.</p>
+        </article>
+        <article class="feat-card">
+          <span class="feat-ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+          </span>
+          <h3>Keine Doppelbelegung</h3>
+          <p>Die Plattform sichert technisch ab, dass ein Zeitraum nicht mehrfach vergeben wird.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sect sect-tint">
+    <div class="sect-inner">
+      <div class="sect-head">
+        <p class="overline">Funktionsumfang</p>
+        <h2 class="sect-h2">Im Detail.</h2>
+      </div>
+      <dl class="spec-list">
+        <div class="spec-row"><dt>Öffentliche Buchungsseite</dt><dd>Unter einer eigenen Adresse buchen Mitglieder verfügbare Termine selbst, ohne Anmeldung. Erhoben werden Name, eine Kontaktangabe, der gewünschte Termin und eine freiwillige Notiz.</dd></div>
+        <div class="spec-row"><dt>Interne Terminverwaltung</dt><dd>Anlage, Zuweisung, Statusänderung und Absage von Terminen durch Nutzer Ihrer Organisation.</dd></div>
+        <div class="spec-row"><dt>Statusmodell</dt><dd>Erstellt, Zugewiesen, Bestätigt und Durchgeführt, jeweils mit der Möglichkeit der Absage. Abgesagte Termine geben den Zeitraum wieder frei.</dd></div>
+        <div class="spec-row"><dt>Doppelbuchungsschutz</dt><dd>Technische Absicherung gegen die mehrfache Belegung desselben Zeitraums.</dd></div>
+        <div class="spec-row"><dt>Missbrauchsschutz</dt><dd>Die öffentliche Buchung ist mengenmäßig begrenzt. Gespeichert wird ausschließlich ein kryptografischer Streuwert der IP-Adresse, nicht die Adresse selbst.</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="sect cta-sect" id="kontakt">
+    <div class="sect-inner cta-inner">
+      <h2 class="sect-h2">Terminplanassistent ausprobieren?</h2>
+      <p class="sect-lead">Wir zeigen Ihnen das Modul an Ihren eigenen Abläufen, nicht an einem Beispieldatensatz.</p>
+      <a class="btn btn-cta" href="mailto:info@struktura-digital.de?subject=Demo%20Terminplanassistent">
+        Demo anfragen
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <div class="cta-divider"></div>
+      <p class="cta-or">Oder schreib uns direkt:</p>
+      <a class="cta-mail" href="mailto:info@struktura-digital.de">info@struktura-digital.de</a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a class="brand" href="index.html#hero">
+        <img class="brand-mark" src="assets/struktura-mark.png" alt="" width="20" height="26">
+        <span class="brand-name">Struktura</span>
+      </a>
+      <p class="footer-tag">Operative Betriebssysteme für wachsende Unternehmen.</p>
+      <p class="footer-copy">© 2026 Struktura Digital<br>Edis Herrmann</p>
+    </div>
+    <div class="footer-col">
+      <p class="footer-h">Produkt</p>
+      <ul><li><a href="index.html#leistungen">Leistungen</a></li><li><a href="sicherheit.html">Sicherheit</a></li><li><a href="index.html#kontakt">Preise</a></li><li><a href="index.html#prozess">Ablauf</a></li></ul>
+    </div>
+    <div class="footer-col">
+      <p class="footer-h">Unternehmen</p>
+      <ul><li><a href="index.html#vertrauen">Über uns</a></li><li><a href="index.html#kontakt">Kontakt</a></li><li><a href="https://portal.struktura-digital.de/login">Portal</a></li></ul>
+    </div>
+    <div class="footer-col">
+      <p class="footer-h">Rechtliches</p>
+      <ul><li><a href="impressum.html">Impressum</a></li><li><a href="datenschutz.html">Datenschutz</a></li><li><a href="agb.html">AGB</a></li></ul>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

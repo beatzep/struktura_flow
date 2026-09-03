@@ -3,12 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sicherheit &amp; Datenschutz — Struktura Digital</title>
-<meta name="description" content="Wie Struktura Mandantendaten schützt: EU-Hosting in Frankfurt und Irland, Verschlüsselung, redundante Backups, Rollenrechte und DSGVO-konforme Auftragsverarbeitung.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='3' y='4' width='20' height='7' rx='3.5' fill='%230B3D91'/%3E%3Crect x='9' y='12.5' width='20' height='7' rx='3.5' fill='%230B3D91' opacity='.8'/%3E%3Crect x='3' y='21' width='20' height='7' rx='3.5' fill='%230B3D91' opacity='.6'/%3E%3C/svg%3E">
+<title>Sicherheit &amp; Datenschutz · Struktura Digital</title>
+<meta name="description" content="Wie Struktura Mitgliederdaten schützt: EU-Hosting in Frankfurt und Irland, Verschlüsselung, redundante Backups, Rollenrechte und DSGVO-konforme Auftragsverarbeitung.">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-512.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700;1,800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400..700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,11 +18,7 @@
 <header class="navbar scrolled" id="navbar">
   <div class="navbar-inner">
     <a class="brand" href="index.html">
-      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
-        <rect x="3" y="4" width="20" height="7" rx="3.5" fill="#0B3D91"/>
-        <rect x="9" y="12.5" width="20" height="7" rx="3.5" fill="#0B3D91" opacity=".82"/>
-        <rect x="3" y="21" width="20" height="7" rx="3.5" fill="#0B3D91" opacity=".64"/>
-      </svg>
+      <img class="brand-mark" src="assets/struktura-mark.png" alt="" width="20" height="26">
       <span class="brand-name">Struktura</span>
     </a>
     <nav class="nav-links" aria-label="Hauptnavigation">
@@ -40,7 +38,7 @@
   <h1>Sicherheit &amp; Datenschutz</h1>
   <p class="legal-updated">Stand: 17. Juli 2026</p>
 
-  <p>Struktura verarbeitet Daten, bei denen Vertrauen keine Nebensache ist: Mandanten-, Fall- und Steuerdaten. Diese Seite erklärt offen und verständlich, wie wir diese Daten schützen&nbsp;– ohne Marketing-Nebel und ohne Juristendeutsch. Sie dürfen diese Seite gern direkt an die Datenschutz-Verantwortlichen Ihrer Kanzlei weiterleiten.</p>
+  <p>Struktura verarbeitet Daten, bei denen Vertrauen keine Nebensache ist: Mitglieder-, Fall- und Steuerdaten. Diese Seite erklärt offen und verständlich, wie wir diese Daten schützen, ohne Marketingnebel und ohne Juristendeutsch. Sie dürfen diese Seite gern direkt an die Datenschutzverantwortlichen Ihrer Kanzlei weiterleiten.</p>
 
   <div class="legal-box">
     <p><strong>Auf einen Blick</strong></p>
@@ -55,23 +53,23 @@
   <h2 id="infrastruktur">1. Infrastruktur &amp; Hosting</h2>
   <p>Struktura läuft vollständig auf europäischer Infrastruktur. Sämtliche produktiven Daten werden ausschließlich in Rechenzentren innerhalb der EU gespeichert und verarbeitet:</p>
   <ul>
-    <li><strong>Vercel</strong> – Auslieferung der Anwendung · Frankfurt am Main, Deutschland (Region <code>eu-central-1</code> / <code>fra1</code>)</li>
-    <li><strong>Supabase</strong> – Datenbank &amp; Authentifizierung · Irland (Region <code>eu-west-1</code>)</li>
-    <li><strong>Amazon Web Services (AWS)</strong> – Dateispeicherung · Frankfurt am Main, Deutschland (Region <code>eu-central-1</code>)</li>
+    <li><strong>Vercel</strong>: Auslieferung der Anwendung · Frankfurt am Main, Deutschland (Region <code>eu-central-1</code> / <code>fra1</code>)</li>
+    <li><strong>Supabase</strong>: Datenbank &amp; Authentifizierung · Irland (Region <code>eu-west-1</code>)</li>
+    <li><strong>Amazon Web Services (AWS)</strong>: Dateispeicherung · Frankfurt am Main, Deutschland (Region <code>eu-central-1</code>)</li>
   </ul>
   <p>Bei den eingesetzten Anbietern handelt es sich um US-Unternehmen mit dedizierten EU-Regionen. Übermittlungen in Drittländer sind, soweit sie im Einzelfall nicht ausgeschlossen werden können, über Standardvertragsklauseln der EU-Kommission abgesichert. Details dazu finden Sie in unserer <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
 
   <h2>2. Verschlüsselung</h2>
   <h3>In der Übertragung</h3>
-  <p>Jede Verbindung zu Struktura&nbsp;– Website, Kundenportal und alle internen Schnittstellen&nbsp;– ist per TLS (HTTPS) verschlüsselt. Eine unverschlüsselte Übertragung von Daten findet nicht statt.</p>
+  <p>Jede Verbindung zu Struktura, also Website, Kundenportal und alle internen Schnittstellen, ist per TLS (HTTPS) verschlüsselt. Eine unverschlüsselte Übertragung von Daten findet nicht statt.</p>
   <h3>Bei der Speicherung</h3>
-  <p>Daten sind auch im Ruhezustand (at rest) verschlüsselt&nbsp;– sowohl in der Datenbank als auch im Dateispeicher. Sicherungskopien werden zusätzlich mit moderner asymmetrischer Verschlüsselung geschützt, bevor sie abgelegt werden.</p>
+  <p>Daten sind auch im Ruhezustand (at rest) verschlüsselt, sowohl in der Datenbank als auch im Dateispeicher. Sicherungskopien werden zusätzlich mit moderner asymmetrischer Verschlüsselung geschützt, bevor sie abgelegt werden.</p>
 
   <h2>3. Backup &amp; Ausfallsicherheit</h2>
   <p>Struktura setzt auf ein redundantes, mehrstufiges Sicherungskonzept:</p>
   <ul>
     <li><strong>Tägliche automatische Backups</strong> des gesamten Datenbestands.</li>
-    <li><strong>Zwei getrennte Speicherorte</strong> innerhalb der EU&nbsp;– ein Ausfall eines Standorts gefährdet Ihre Daten nicht.</li>
+    <li><strong>Zwei getrennte Speicherorte</strong> innerhalb der EU. Der Ausfall eines Standorts gefährdet Ihre Daten nicht.</li>
     <li><strong>Zusätzliche verschlüsselte Sicherung</strong> des zentralen Datenbestands an einem unabhängigen Speicherort.</li>
   </ul>
   <h3>Disaster Recovery</h3>
@@ -79,22 +77,22 @@
 
   <h2>4. Zugriffskontrolle: Rollen &amp; Rechte</h2>
   <ul>
-    <li><strong>Mandantentrennung:</strong> Jede Kanzlei sieht ausschließlich ihre eigenen Daten. Die Trennung ist auf Datenbankebene technisch erzwungen (Row Level Security)&nbsp;– nicht nur in der Oberfläche.</li>
+    <li><strong>Datentrennung:</strong> Jede Kanzlei sieht ausschließlich ihre eigenen Daten. Die Trennung ist auf Datenbankebene technisch erzwungen (Row Level Security), nicht nur in der Oberfläche.</li>
     <li><strong>Rollenmodell:</strong> Fein abgestufte Rechte (z.&nbsp;B. Kanzleileitung, Bearbeiter, Empfang) steuern, wer welche Daten sehen und ändern darf.</li>
-    <li><strong>Passwörter:</strong> werden ausschließlich verschlüsselt (gehasht) gespeichert&nbsp;– im Klartext existieren sie bei uns nicht.</li>
+    <li><strong>Passwörter:</strong> werden ausschließlich verschlüsselt (gehasht) gespeichert. Im Klartext existieren sie bei uns nicht.</li>
     <li><strong>Nachvollziehbarkeit:</strong> Änderungen werden protokolliert. Wer wann was geändert hat, bleibt transparent.</li>
   </ul>
 
   <h2>5. Datentransparenz &amp; Export</h2>
-  <p>Ihre Daten gehören Ihnen&nbsp;– nicht uns. Sie haben jederzeit vollen Zugriff auf Ihren kompletten Datenbestand und können ihn jederzeit vollständig exportieren.</p>
-  <p>Wir sind überzeugt: Vertrauen entsteht durch offene Türen, nicht durch verschlossene. Sie sollen bei Struktura bleiben, weil das System überzeugt&nbsp;– nicht, weil der Ausstieg schwer wäre.</p>
+  <p>Ihre Daten gehören Ihnen, nicht uns. Sie haben jederzeit vollen Zugriff auf Ihren kompletten Datenbestand und können ihn jederzeit vollständig exportieren.</p>
+  <p>Wir sind überzeugt: Vertrauen entsteht durch offene Türen, nicht durch verschlossene. Sie sollen bei Struktura bleiben, weil das System überzeugt, nicht weil der Ausstieg schwer wäre.</p>
 
   <h2>6. DSGVO &amp; Auftragsverarbeitung</h2>
-  <p>Die Verarbeitung personenbezogener Daten erfolgt nach den Vorgaben der DSGVO. Soweit wir Mandantendaten im Auftrag Ihrer Kanzlei verarbeiten, geschieht das auf Grundlage eines <strong>Vertrags zur Auftragsverarbeitung (AVV) nach Art. 28 DSGVO</strong>&nbsp;– wir stellen ihn Ihnen auf Anfrage unterschriftsfertig zur Verfügung.</p>
-  <p>Als Unterauftragsverarbeiter setzen wir ausschließlich die unter <a href="#infrastruktur">Punkt 1</a> genannten Infrastruktur-Anbieter ein (Vercel, Supabase, AWS). Eine vollständige Übersicht inklusive Rechtsgrundlagen enthält unsere <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+  <p>Die Verarbeitung personenbezogener Daten erfolgt nach den Vorgaben der DSGVO. Soweit wir Mitgliederdaten im Auftrag Ihrer Kanzlei verarbeiten, geschieht das auf Grundlage eines <strong>Vertrags zur Auftragsverarbeitung (AVV) nach Art. 28 DSGVO</strong>. Wir stellen ihn Ihnen auf Anfrage unterschriftsfertig zur Verfügung.</p>
+  <p>Als Unterauftragsverarbeiter setzen wir ausschließlich die unter <a href="#infrastruktur">Punkt 1</a> genannten Infrastrukturanbieter ein (Vercel, Supabase, AWS). Eine vollständige Übersicht inklusive Rechtsgrundlagen enthält unsere <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
 
   <h2>7. Laufende Updates &amp; Weiterentwicklung</h2>
-  <p>Struktura wird kontinuierlich weiterentwickelt. Sicherheits- und Funktionsupdates werden laufend eingespielt&nbsp;– ohne Wartungsaufwand und ohne Zutun Ihres Teams. Es gibt keine veralteten Installationen: Alle Kanzleien arbeiten immer auf dem aktuellen, sicheren Stand.</p>
+  <p>Struktura wird kontinuierlich weiterentwickelt. Sicherheits- und Funktionsupdates werden laufend eingespielt, ohne Wartungsaufwand und ohne Zutun Ihres Teams. Es gibt keine veralteten Installationen: Alle Kanzleien arbeiten immer auf dem aktuellen, sicheren Stand.</p>
 
   <h2>8. Ansprechpartner bei Datenschutzfragen</h2>
   <div class="legal-box">
@@ -104,20 +102,16 @@
       Telefon: <a href="tel:+4917623244671">+49 176 23244671</a>
     </p>
   </div>
-  <p>Bei Datenschutzfragen erreichen Sie uns direkt&nbsp;– ohne Ticketsystem und ohne Warteschleife. In der Regel antworten wir innerhalb eines Werktags.</p>
+  <p>Bei Datenschutzfragen erreichen Sie uns direkt, ohne Ticketsystem und ohne Warteschleife. In der Regel antworten wir innerhalb eines Werktags.</p>
 
-  <p>Sie prüfen Struktura gerade für Ihre Kanzlei? Leiten Sie diese Seite gern an Ihre Datenschutz-Verantwortlichen weiter&nbsp;– oder <a href="mailto:info@struktura-digital.de?subject=Erstgespr%C3%A4ch%20Struktura">vereinbaren Sie direkt ein Erstgespräch</a>.</p>
+  <p>Sie prüfen Struktura gerade für Ihre Kanzlei? Leiten Sie diese Seite gern an Ihre Datenschutzverantwortlichen weiter, oder <a href="mailto:info@struktura-digital.de?subject=Erstgespr%C3%A4ch%20Struktura">vereinbaren Sie direkt ein Erstgespräch</a>.</p>
 </main>
 
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-brand">
       <a class="brand" href="index.html">
-        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
-          <rect x="3" y="4" width="20" height="7" rx="3.5" fill="#0B3D91"/>
-          <rect x="9" y="12.5" width="20" height="7" rx="3.5" fill="#0B3D91" opacity=".82"/>
-          <rect x="3" y="21" width="20" height="7" rx="3.5" fill="#0B3D91" opacity=".64"/>
-        </svg>
+        <img class="brand-mark" src="assets/struktura-mark.png" alt="" width="20" height="26">
         <span class="brand-name">Struktura</span>
       </a>
       <p class="footer-tag">Operative Betriebssysteme für wachsende Unternehmen.</p>
