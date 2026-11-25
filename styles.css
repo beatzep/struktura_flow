@@ -3,6 +3,17 @@
    Palette + Typo: Struktura Design System
    ============================================================ */
 
+/* Schrift liegt selbst gehostet unter assets/fonts (SIL OFL 1.1, siehe OFL.txt),
+   damit beim Seitenaufruf keine Besucher-IP an Google Fonts geht.
+   Variable Datei mit Latin-Subset, deckt alle genutzten Gewichte 400 bis 700 ab. */
+@font-face {
+  font-family: "Schibsted Grotesk";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400 900;
+  src: url("assets/fonts/schibsted-grotesk-latin-wght-normal.woff2") format("woff2");
+}
+
 :root {
   --bg: #ffffff;
   --bg-soft: #fafafa;

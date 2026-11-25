@@ -9,10 +9,8 @@
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-512.png">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-180.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400..700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link rel="preload" href="assets/fonts/schibsted-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
 
@@ -37,7 +35,7 @@
 
 <main class="legal-main">
   <h1>Datenschutzerklärung</h1>
-  <p class="legal-updated">Stand: 12. Juni 2026</p>
+  <p class="legal-updated">Stand: 25. November 2026</p>
 
   <p>Diese Datenschutzerklärung informiert Sie über die Verarbeitung personenbezogener Daten bei Nutzung unserer Marketing-Website (<strong>www.struktura-digital.de</strong>) und unseres Kundenportals (<strong>portal.struktura-digital.de</strong>).</p>
 
@@ -72,20 +70,14 @@
   <strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einem sicheren Betrieb).<br>
   <strong>Speicherdauer:</strong> in der Regel wenige Tage bis maximal 30 Tage, sofern keine sicherheitsrelevante Aufbewahrung erforderlich ist.</p>
 
-  <h3>3.2 Schriftarten (Google Fonts)</h3>
-  <p>Zur einheitlichen Darstellung laden wir Schriftarten von Google Fonts. Dabei kann Ihre IP-Adresse an Google übermittelt werden, da die Schriften von Servern von Google abgerufen werden.</p>
-  <p><strong>Anbieter:</strong> Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland<br>
-  <strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer konsistenten Darstellung).<br>
-  <strong>Hinweis:</strong> Bei der Übermittlung kann es zu einer Verarbeitung in Drittländern (insb. USA) kommen. Google stützt sich hierfür u.&nbsp;a. auf Standardvertragsklauseln.</p>
-
-  <h3>3.3 Kontakt per E-Mail</h3>
+  <h3>3.2 Kontakt per E-Mail</h3>
   <p>Wenn Sie uns per E-Mail kontaktieren (z.&nbsp;B. über die <code>mailto:</code>-Links auf der Website), verarbeiten wir die von Ihnen mitgeteilten Daten (z.&nbsp;B. Name, E-Mail-Adresse, Inhalt der Nachricht).</p>
   <p><strong>Zweck:</strong> Bearbeitung Ihrer Anfrage.<br>
   <strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Maßnahmen) bzw. Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Kommunikation).<br>
   <strong>Speicherdauer:</strong> bis zur abschließenden Bearbeitung der Anfrage, längstens jedoch ein Jahr, sofern keine gesetzlichen Aufbewahrungspflichten entgegenstehen.</p>
   <p>Es wird <strong>kein Kontaktformular</strong> auf der Marketing-Website betrieben; eine Übermittlung erfolgt über Ihr eigenes E-Mail-Programm.</p>
 
-  <h3>3.4 Cookies auf der Marketing-Website</h3>
+  <h3>3.3 Cookies auf der Marketing-Website</h3>
   <p>Die Marketing-Website setzt derzeit keine eigenen Tracking- oder Marketing-Cookies. Technisch notwendige Verarbeitungen (z.&nbsp;B. Server-Logfiles) erfolgen ohne Cookie-Einwilligung.</p>
 
   <h2>4. Kundenportal (portal.struktura-digital.de)</h2>
@@ -126,12 +118,11 @@
     <li><strong>Vercel Inc.</strong>: Hosting der Website und des Portals</li>
     <li><strong>Supabase Inc.</strong>: Authentifizierung, Datenbank und Backend-Infrastruktur (EU-Region)</li>
     <li><strong>Amazon Web Services (AWS)</strong>: Dateispeicherung (Region eu-central-1, Frankfurt), soweit Datei-Uploads genutzt werden</li>
-    <li><strong>Google Ireland Limited</strong>: Bereitstellung von Webfonts auf der Marketing-Website</li>
   </ul>
   <p>Mit Auftragsverarbeitern werden datenschutzrechtliche Vereinbarungen geschlossen, soweit erforderlich.</p>
 
   <h2>6. Drittlandübermittlung</h2>
-  <p>Bei einzelnen Dienstleistern (insbesondere Vercel, Supabase, AWS, Google) kann eine Verarbeitung in Drittländern (insb. USA) nicht ausgeschlossen werden. In diesen Fällen erfolgt die Übermittlung auf Grundlage geeigneter Garantien, insbesondere Standardvertragsklauseln der EU-Kommission, soweit anwendbar.</p>
+  <p>Bei einzelnen Dienstleistern (insbesondere Vercel, Supabase, AWS) kann eine Verarbeitung in Drittländern (insb. USA) nicht ausgeschlossen werden. In diesen Fällen erfolgt die Übermittlung auf Grundlage geeigneter Garantien, insbesondere Standardvertragsklauseln der EU-Kommission, soweit anwendbar.</p>
 
   <h2>7. Ihre Rechte</h2>
   <p>Sie haben gegenüber uns folgende Rechte hinsichtlich der Sie betreffenden personenbezogenen Daten:</p>
