@@ -5,12 +5,13 @@
 
 /* Schrift liegt selbst gehostet unter assets/fonts (SIL OFL 1.1, siehe OFL.txt),
    damit beim Seitenaufruf keine Besucher-IP an Google Fonts geht.
-   Variable Datei mit Latin-Subset, deckt alle genutzten Gewichte 400 bis 700 ab. */
+   Variable Datei mit Latin-Subset. Der Bereich ist wie zuvor bei Google auf 400 bis 700
+   begrenzt, sonst rendert <b> in fettem Umfeld (bolder) mit 900 statt 700. */
 @font-face {
   font-family: "Schibsted Grotesk";
   font-style: normal;
   font-display: swap;
-  font-weight: 400 900;
+  font-weight: 400 700;
   src: url("assets/fonts/schibsted-grotesk-latin-wght-normal.woff2") format("woff2");
 }
 
