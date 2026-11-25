@@ -1068,21 +1068,6 @@ a { text-decoration: none; color: inherit; }
   transform: translateX(-50%);
 }
 
-/* Erinnerungs-Pills */
-.mv-reminders { width: 100%; display: flex; flex-direction: column; gap: 8px; }
-.mvr-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 11.5px;
-  font-weight: 600;
-  padding: 8px 12px;
-  border-radius: 9px;
-}
-.mvr-pill svg { width: 13px; height: 13px; flex: none; }
-.mvr-pill.warn { background: #FFF7ED; border: 1px solid #FDBA74; color: #B45309; }
-.mvr-pill.alert { background: #FEE2E2; border: 1px solid #FCA5A5; color: #B91C1C; }
-
 /* Connect: Chat */
 .mv-chat { width: 100%; display: flex; flex-direction: column; gap: 6px; }
 .mvch {
@@ -1241,35 +1226,11 @@ a { text-decoration: none; color: inherit; }
 }
 .sec-badges svg { width: 15px; height: 15px; flex: none; }
 
-/* Abschlusszeile: Live-Hinweis links, Detail-Link rechts */
+/* Abschlusszeile mit Link zur Sicherheitsseite */
 .sec-foot {
   margin-top: 44px;
   padding-top: 28px;
   border-top: 1px solid var(--line);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 18px;
-  flex-wrap: wrap;
-}
-.sec-live {
-  display: flex;
-  align-items: center;
-  gap: 11px;
-  font-size: 14.5px;
-  font-weight: 600;
-  color: var(--text);
-}
-.sec-live-dot {
-  flex: none;
-  width: 8px; height: 8px;
-  border-radius: 50%;
-  background: #16A34A;
-  animation: live-pulse 2.6s ease-in-out infinite;
-}
-@keyframes live-pulse {
-  0%, 100% { box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.14); }
-  50% { box-shadow: 0 0 0 7px rgba(22, 163, 74, 0.1); }
 }
 .sec-more {
   display: inline-flex;
@@ -1283,10 +1244,6 @@ a { text-decoration: none; color: inherit; }
 .sec-more svg { width: 14px; height: 14px; transition: transform .25s ease; }
 .sec-more:hover { color: var(--blue-bright); }
 .sec-more:hover svg { transform: translateX(4px); }
-
-/* Links in FAQ-Antworten (z. B. auf die Sicherheitsseite) */
-.faq-item p a { color: var(--blue); font-weight: 600; }
-.faq-item p a:hover { color: var(--blue-bright); }
 
 @media (max-width: 980px) {
   .sec-grid { gap: 18px; }
@@ -1486,6 +1443,45 @@ a { text-decoration: none; color: inherit; }
   line-height: 1.65;
   color: var(--muted);
   max-width: 680px;
+}
+.faq-item p a { color: var(--blue); font-weight: 600; }
+.faq-item p a:hover { color: var(--blue-bright); }
+
+.faq-modules {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  padding: 0 24px 24px;
+  list-style: none;
+}
+.faq-modules li:first-child { grid-column: 1 / -1; }
+.faq-modules a {
+  display: block;
+  height: 100%;
+  padding: 11px 13px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: var(--bg-soft);
+}
+.faq-modules a:hover,
+.faq-modules a:focus-visible { border-color: var(--blue); }
+.faq-modules a:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+.faq-modules strong {
+  display: block;
+  color: var(--blue);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.faq-modules span {
+  display: block;
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 13.5px;
+  line-height: 1.45;
+}
+@media (max-width: 620px) {
+  .faq-modules { grid-template-columns: 1fr; }
 }
 
 /* ---------- CTA ---------- */
@@ -1783,6 +1779,7 @@ a { text-decoration: none; color: inherit; }
 }
 .spec-row dt { font-size: 15px; font-weight: 600; color: var(--text); }
 .spec-row dd { margin: 0; font-size: 14.5px; line-height: 1.65; color: var(--muted); }
+.spec-row dd a { color: var(--blue); font-weight: 600; text-decoration: underline; }
 
 .mod-note {
   margin-top: 36px;

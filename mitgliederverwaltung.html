@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mitgliederverwaltung · Struktura Digital</title>
-<meta name="description" content="Jeder Fall, jeder Status, ein System. Statt paralleler Listen sieht das ganze Team denselben Stand, tagesaktuell und nachvollziehbar.">
+<meta name="description" content="Alle Fälle in einer Übersicht. Sie sehen den Bearbeitungsstand und werden automatisch an fehlende Belege und Unterschriften erinnert.">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-512.png">
@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400..700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
 
@@ -41,8 +41,8 @@
     <a class="mod-back" href="index.html#leistungen"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M14 8H3M7 3.5 2.5 8 7 12.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Alle Leistungen</a>
     <p class="overline">Leistung</p>
     <h1>Mitgliederverwaltung</h1>
-    <p class="sect-lead">Jeder Fall, jeder Status, ein System. Statt paralleler Listen sieht das ganze Team denselben Stand, tagesaktuell und nachvollziehbar.</p>
-    <div class="mod-tags"><span>Statusverfolgung</span><span>Rollenbasiert</span><span>CSV-Import</span></div>
+    <p class="sect-lead">Alle Fälle in einer Übersicht. Sie sehen den Bearbeitungsstand und werden automatisch an fehlende Belege und Unterschriften erinnert.</p>
+    <div class="mod-tags"><span>Statusverfolgung</span><span>Erinnerungen</span><span>CSV-Import</span></div>
   </div>
 
   <section class="sect">
@@ -89,6 +89,7 @@
         <div class="spec-row"><dt>Direktbearbeitung</dt><dd>Bearbeitung der Felder unmittelbar in der Listenansicht, ohne Wechsel in eine Detailmaske.</dd></div>
         <div class="spec-row"><dt>Datenfelder</dt><dd>Laufende Nummer gesamt und je Monat, Vor- und Nachname, Steuerjahr, Bearbeitungsstatus, fehlende Belege, ausstehende Unterschriften, Beitrag in Euro, Zahlungseingang, Abrechnungsmonat, Bearbeiterkürzel, Datum der Übermittlung an das Finanzamt und Bescheidstatus.</dd></div>
         <div class="spec-row"><dt>Importassistent</dt><dd>Geführter Import von Bestandsdaten aus CSV oder XLSX in vier Schritten, mit Feldzuordnung und Vorschau vor der Übernahme.</dd></div>
+        <div class="spec-row"><dt>Automatische Erinnerungen</dt><dd>Die Mitgliederverwaltung erinnert an fehlende Belege und Unterschriften. Sie können die Fristen anpassen und Erinnerungen je Fall pausieren. <a href="erinnerungslogik.html">Details zu den Erinnerungen</a></dd></div>
         <div class="spec-row"><dt>Kennzahlenübersicht</dt><dd>Tagesaktuelle Anzeige offener Fälle, abgeschlossener Fälle und ausstehender Erinnerungen.</dd></div>
         <div class="spec-row"><dt>Wiederherstellung</dt><dd>Gelöschte Einträge bleiben 24 Stunden wiederherstellbar. Vor jeder Massenlöschung wird automatisch eine Sicherung angelegt.</dd></div>
       </dl>
@@ -104,7 +105,7 @@
         <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
       <div class="cta-divider"></div>
-      <p class="cta-or">Oder schreib uns direkt:</p>
+      <p class="cta-or">Oder schreiben Sie uns direkt per E-Mail.</p>
       <a class="cta-mail" href="mailto:info@struktura-digital.de">info@struktura-digital.de</a>
     </div>
   </section>
@@ -117,12 +118,12 @@
         <img class="brand-mark" src="assets/struktura-mark.png" alt="" width="20" height="26">
         <span class="brand-name">Struktura</span>
       </a>
-      <p class="footer-tag">Operative Betriebssysteme für wachsende Unternehmen.</p>
+      <p class="footer-tag">Software für Beratungsstellen.</p>
       <p class="footer-copy">© 2026 Struktura Digital<br>Edis Herrmann</p>
     </div>
     <div class="footer-col">
       <p class="footer-h">Produkt</p>
-      <ul><li><a href="index.html#leistungen">Leistungen</a></li><li><a href="sicherheit.html">Sicherheit</a></li><li><a href="index.html#kontakt">Preise</a></li><li><a href="index.html#prozess">Ablauf</a></li></ul>
+      <ul><li><a href="index.html#leistungen">Leistungen</a></li><li><a href="sicherheit.html">Sicherheit</a></li><li><a href="index.html#kontakt">Preise anfragen</a></li><li><a href="index.html#prozess">Ablauf</a></li></ul>
     </div>
     <div class="footer-col">
       <p class="footer-h">Unternehmen</p>
